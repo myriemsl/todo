@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      background-color: #213A83;
+
+  }
+
+  .App {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: #a9aebb;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding:  7rem;
+    width: 80%;
+    height: 90vh;
+    border-radius: 1rem;
+   background: #213A83;
+   box-shadow:  6px 6px 12px #1a2e69,
+             -6px -6px 12px #28469d; 
+  }
+
+
+  .userdetails { 
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3em;
+  }
+ 
+ 
+.containerdetails {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addtask {
+    margin: 3em 1em 0;
+ }
+ form { display: flex;}
+ input[type='text'] { margin-right: 1em;
+   height: 3em !important;
+   width: 21em !important;
+   font-size: 1em !important;
+   border: none; 
+   border-bottom: 1px solid #041955; 
+   border-radius: 0.2em;
+   background: transparent;
+   outline: none;
+ }
+ form, ::placeholder { 
+   font-size: 1em;
+   padding: 1rem;
+   color: #3A4D8A;
+ }
+ 
+ .addbtn { 
+   padding: 0 1em ;
+   border: none;
+   border-radius: 0.2em;
+   cursor: pointer;
+   font-size: 1.2em;
+   color: #a9aebb;
+   background-color: #041955;
+ }   
+ 
+ .task { 
+    margin: 2em 0 0;
+    display: flex;
+    font-size: 1.2em;
+  }
+  .task span {
+    margin-right: 1em;
+   display: flex;
+   align-items: center;
+  }
+
+  .done { font-style: italic;
+    text-decoration: line-through;
+}
+
+  .taskicon { 
+    margin: auto 0.7em;
+    border: none;
+    cursor: pointer;
+    font-size:1.2em;
+  }
+  .listtask { 
+      text-align: center;
+  }
+.listtask label {
+    margin-right: 0.7em;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .details {
+    padding:6rem;
+  }
+  .userdetails {
+    font-size: 2em;
+}
+
+  input[type='text'] { margin-right: 1em;
+    height: 2em !important;
+    width: 14em !important;
+  }
+  .addbtn { 
+    font-size: 1em;  
+  } 
+  .task span {
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+  .userdetails {
+      font-size: 1.7em;
+  }
+  input[type='text'] { margin-right: 1em;
+    height: 2em !important;
+    width: 12em !important;
+  }
+  .addbtn { 
+    font-size: 0.8em;  
+  } 
+
+  #icon  {
+  display: none;
+}
+
+.task { 
+  display: flex;
+  font-size: 1em;
+}
+.task span {
+  margin-right: 0.5em;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .userdetails {
+      font-size: 1em;
+  }
+  input[type='text'] { margin-right: 1em;
+    height: 2em !important;
+    width: 10em !important;
+  }
+}
